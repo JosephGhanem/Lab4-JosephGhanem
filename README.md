@@ -74,8 +74,8 @@ Manual demonstration:
 
 Work is kept on `main`. The assignment's solo section does not require a second
 student, feature branches, pull requests, merges, or a “who pushed what” file.
-The local commit author is a neutral workspace identity until the student's Git
-identity is supplied; it does not identify a second contributor.
+The initial preparation commits use a neutral workspace identity; later commits
+use the connected GitHub account, JosephGhanem. This is a solo project.
 
 To inspect the work:
 
@@ -93,27 +93,23 @@ git commit -m "Describe the change"
 git push origin main
 ```
 
-## GitHub and submission — still to complete
+## GitHub and submission
 
-The project has been prepared locally. No GitHub repository, invitation,
-GitHub release, or Moodle submission has been created by this local setup.
+Repository: https://github.com/JosephGhanem/Lab4-JosephGhanem
 
-1. Set your identity: `git config user.name "Your Full Name"` and
-   `git config user.email "Your GitHub email or noreply address"`.
-2. Create an empty GitHub repository named `Lab4-YourFullName`. Use private
-   visibility if required. Do not initialize the remote with another README.
-3. Connect and push (replace the example URL with your repository URL):
+The application, tests, and README are published on `main`. The verified initial
+version is tagged `v1.0`. A separate GitHub Release is optional and has not been
+created.
 
-   ```sh
-   git remote add origin https://github.com/YOUR_USERNAME/Lab4-YourFullName.git
-   git push -u origin main
-   git push origin v1.0
-   ```
+Remaining submission steps:
 
-4. If private, add the instructor and TAs using their actual GitHub usernames.
-5. Optionally create a GitHub release for the `v1.0` tag.
-6. Submit the repository URL and this README on Moodle. No contribution-tracking
+1. The repository was public when published. If the course requires a private
+   repository, change its visibility in GitHub Settings.
+2. If private, invite the instructor and TAs using their GitHub usernames.
+3. Submit the repository URL and this README on Moodle. No contribution-tracking
    document is needed for a solo submission.
+
+Moodle submission and instructor/TA invitations have not been performed.
 
 The assignment also asks the student to review its Git tutorial and VS Code
 source-control exercise. Reading and personal practice are not represented as
