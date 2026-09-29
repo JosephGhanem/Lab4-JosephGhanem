@@ -126,3 +126,17 @@ completed by this project.
 - VS Code source control: https://code.visualstudio.com/docs/sourcecontrol/overview
 - Tkinter documentation: https://docs.python.org/3/library/tkinter.html
 - PyQt6 documentation: https://www.riverbankcomputing.com/static/Docs/PyQt6/
+
+## Verification results
+
+Verified locally on macOS with Python 3.13, PyQt6 6.11.0, and Tk 9.0:
+
+- All three backend tests passed.
+- The real-widget Tkinter/PyQt integration smoke test passed.
+- The launcher help command passed.
+
+The missing Tkinter component was installed through Homebrew
+(`brew install python-tk@3.13`), which also upgraded Python 3.13 and required
+Homebrew dependencies. The project's PyQt installation is isolated in `.venv`.
+The GUI smoke test requires access to the desktop window system; a sandboxed
+run without that access may abort before displaying a window.
